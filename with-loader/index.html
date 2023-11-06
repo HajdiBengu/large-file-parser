@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Nje div per elementin e input file -->
+    <div id="inputDiv">
+      <input type="file" id="input" name="input" onchange="FileInput(this)" />
+    </div>
+
+    <!-- Nje div per kerkimin, me nje search bar dhe nje mesazh gabimi qe shfaqet vetem kur kerkimi nuk jep rezultat. -->
+    <div id="searchDiv">
+      <input id="search" type="text" class="input" placeholder="Search..." />
+      <span id="error"></span>
+    </div>
+
+    <!-- Nje div per loaderin, i cili shfaqet vetem pasi ngarkojme file ne input -->
+    <div style="display: none" id="loader"></div>
+
+    <!-- Nje container per listen qe do perdorim per te shfaqur te dhenat e ngarkuara apo rezultatet e kerkimit.
+      Shfaqet pas loaderit, vetem disa sekonda pasi eshte ngarkuar file ne  input-->
+    <ol style="display: none" id="list"></ol>
+
+    <script src="script.js"></script>
+  </body>
+</html>
