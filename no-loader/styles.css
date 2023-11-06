@@ -1,0 +1,37 @@
+#inputDiv {
+  margin: auto;
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+#row {
+  border: 1px solid;
+  padding: 4.5px;
+  max-height: 19px;
+}
+
+#list {
+  margin: auto;
+  width: 60%;
+  max-height: 550px;
+  overflow: scroll;
+  background-color: white;
+  list-style-position: inside;
+  padding-left: 0px;
+}
+
+body {
+  background-color: skyblue;
+}
+
+#searchDiv {
+  margin: auto;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+#error {
+  margin-left: 15px;
+}
