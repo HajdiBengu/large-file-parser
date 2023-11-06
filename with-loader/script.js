@@ -67,8 +67,7 @@ async function FileInput(input) {
   // Pas 2 sekondave removeLoader heq loaderin dhe shfaq listen e rezultateve.
   // Shenim: Funksionaliteti i loaderit ne kete ushtrim eshte i panevojshem, per shkak se
   // shfaqja e listes se rezultateve arrihet menjehere pas ngarkimit te file-it nepermjet readableStream, pa vonesa.
-  // Gjithsesi, edhe pse e panatyrshme per kete zgjidhje te ushtrimit, vendosa te implementoj loaderin per t'ju
-  // permbajtur kerkesave te ushtrimit deri ne fund. Nje version pa loader mund t'a gjeni ne GitHub per krahasim.
+  // Gjithsesi vendosa te implementoj loaderin per tu permbajtur kerkesave te ushtrimit. Nje version pa loader mund t'a gjeni ne GitHub per krahasim.
   showLoader();
   removeLoader();
   // Definojme readableStream dhe text decoder (sepse readableStream dergon bytes, jo text)
